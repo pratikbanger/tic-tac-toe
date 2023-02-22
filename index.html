@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tic Tac Toe - Game</title>
+</head>
+
+<body>
+    <!-- NavBar from Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tic Tac Toe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://github.com/pratikbanger" target="_blank">My GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/pratik-bangar-677013258" target="_blank">My Linkdin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gameContainer">
+        <div class="innerContainer">
+            <div class="line"></div>
+            <div class="box bl-0 bt-0"><span class="boxText"></span></div>
+            <div class="box bt-0"><span class="boxText"></span></div>
+            <div class="box bt-0 br-0"><span class="boxText"></span></div>
+            <div class="box bl-0"><span class="boxText"></span></div>
+            <div class="box"><span class="boxText"></span></div>
+            <div class="box br-0"><span class="boxText"></span></div>
+            <div class="box bl-0 bb-0"><span class="boxText"></span></div>
+            <div class="box bb-0"><span class="boxText"></span></div>
+            <div class="box bb-0 br-0"><span class="boxText"></span></div>
+        </div>
+
+        <div class="infoContainer">
+            <h1>Welcome to Tic Tac Toe</h1>
+            <div>
+                <span><strong class="info">Turn for X</strong></span>
+                <button id="reset" class="btn btn-primary mx-2 my-2">Restart</button>
+            </div>
+            <div class="playMusic">
+                <span>Play music</span>
+                <i class="fa-solid px-2 py-2 fa-volume-xmark"></i>
+            </div>
+            <div class="imgbox">
+                <img src="winGif.gif" alt="Win">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d7794c7bd4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
